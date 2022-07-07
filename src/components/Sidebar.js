@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 import { MdDashboard, MdMenuBook } from 'react-icons/md'
 import { GoListOrdered } from 'react-icons/go'
-import Hamburger from 'hamburger-react'
 
 function Sidebar(props) {
   return (
-    <Wrapper isOpen={props.isOpen}>
+    <Wrapper>
       <div className='sidenav-items'>
         <div className='sidenav-item'>
           <MdDashboard className='icon' />
@@ -20,29 +19,25 @@ function Sidebar(props) {
           <p>Orders</p>
         </div>
       </div>
-      <div className='hamburger'>
-        <Hamburger
-          color={'purple'}
-          toggled={props.isOpen}
-          toggle={props.setOpen}
-        />
-      </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  width: ${(props) => (props.isOpen ? '250px' : '70px')};
-  overflow: ${(props) => (!props.isOpen ? 'hidden' : 'visible')};
+  width: 70px;
+  overflow: hidden;
   height: calc(100vh - 100px);
   background: #f0f0fa;
   display: grid;
   place-items: center;
   position: relative;
   transition: all 1s, overflow 5s;
+  :hover {
+    width: 200px;
+  }
 
   .sidenav-items {
-    width: ${(props) => (props.isOpen ? '250px' : '200px')};
+    width: 200px;
     display: grid;
     grid-template-rows: repeat(3, min-content);
     row-gap: 4rem;

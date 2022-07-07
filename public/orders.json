@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "table": "m1",
+    "waiter": "Usman",
+    "status": "pending",
+    "price": 12.5,
+    "food": "kebab"
+  },
+  {
+    "id": 2,
+    "table": "m2",
+    "waiter": "Adesanya",
+    "status": "fulfilled",
+    "price": 18,
+    "food": "lahmacun"
+  },
+  {
+    "id": 3,
+    "table": "m3",
+    "waiter": "Conor",
+    "status": "rejected",
+    "price": 11,
+    "food": "salad"
+  },
+  {
+    "id": 4,
+    "table": "m4",
+    "waiter": "Samir",
+    "status": "pending",
+    "price": 5,
+    "food": "doner"
+  },
+  {
+    "id": 5,
+    "table": "m5",
+    "waiter": "Samir",
+    "status": "fulfilled",
+    "price": 21,
+    "food": "club sandwich"
+  },
+  {
+    "id": 6,
+    "table": "m6",
+    "waiter": "Usman",
+    "status": "fulfilled",
+    "price": 8.3,
+    "food": "dolma"
+  },
+  {
+    "id": 7,
+    "table": "m7",
+    "waiter": "Conor",
+    "status": "rejected",
+    "price": 15,
+    "food": "Pizza Mexican"
+  },
+  {
+    "id": 8,
+    "table": "m8",
+    "waiter": "Dembele",
+    "status": "done",
+    "price": 12.5,
+    "food": "Saurma"
+  },
+  {
+    "id": 9,
+    "table": "m9",
+    "waiter": "Usman",
+    "status": "done",
+    "price": 9.6,
+    "food": "soup"
+  },
+  {
+    "id": 10,
+    "table": "m10",
+    "waiter": "Dembele",
+    "status": "done",
+    "price": 12,
+    "food": "kebab"
+  }
+]
