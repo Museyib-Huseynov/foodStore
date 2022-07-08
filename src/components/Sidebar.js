@@ -1,23 +1,24 @@
 import styled from 'styled-components'
 import { MdDashboard, MdMenuBook } from 'react-icons/md'
 import { GoListOrdered } from 'react-icons/go'
+import { Link } from 'react-router-dom'
 
 function Sidebar(props) {
   return (
     <Wrapper>
       <div className='sidenav-items'>
-        <div className='sidenav-item'>
+        <Link to='/' className='sidenav-item'>
           <MdDashboard className='icon' />
           <p>Dashboard</p>
-        </div>
-        <div className='sidenav-item'>
+        </Link>
+        <Link to='/' className='sidenav-item'>
           <MdMenuBook className='icon' />
           <p>Menu</p>
-        </div>
-        <div className='sidenav-item'>
+        </Link>
+        <Link to='/orders' className='sidenav-item'>
           <GoListOrdered className='icon' />
           <p>Orders</p>
-        </div>
+        </Link>
       </div>
     </Wrapper>
   )

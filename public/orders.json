@@ -19,7 +19,7 @@
     "id": 3,
     "table": "m3",
     "waiter": "Conor",
-    "status": "rejected",
+    "status": "done",
     "price": 11,
     "food": "salad"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "table": "m7",
     "waiter": "Conor",
-    "status": "rejected",
+    "status": "done",
     "price": 15,
     "food": "Pizza Mexican"
   },

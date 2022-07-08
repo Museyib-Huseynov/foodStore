@@ -1,33 +1,14 @@
 import styled from 'styled-components'
-import { useState, useEffect } from 'react'
+import { Outlet } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { useGlobalContext } from '../context/global_context'
 
 function Orders() {
-  const [orders, setOrders] = useState(null)
+  const { orders, setOrders } = useGlobalContext()
+  let navigate = useNavigate()
 
-  useEffect(() => {
-    fetchOrders()
-  }, [])
-
-  const fetchOrders = async () => {
-    try {
-      const orders = await fetch('http://localhost:3000/orders.json')
-      const result = await orders.json()
-
-      const order = { pending: 1, done: 2, rejected: 3 }
-      result.sort((a, b) => order[a.status] - order[b.status])
-      setOrders(result)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
-  const defineColor = (order) => {
-    if (order.status === 'done') {
-      return 'success'
-    }
-    if (order.status === 'rejected') {
-      return 'rejected'
-    }
+  const handleClick = (id) => {
+    navigate(`/orders/${id}`)
   }
 
   return (
@@ -36,33 +17,46 @@ function Orders() {
         <h2>Total Orders</h2>
         <br />
         <table>
-          <tr>
-            <th></th>
-            <th>Table</th>
-            <th>Waiter</th>
-            {/* <th>Food</th> */}
-            <th>Price</th>
-            <th>Status</th>
-            <th></th>
-          </tr>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Table</th>
+              <th>Waiter</th>
+              {/* <th>Food</th> */}
+              <th>Price</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
           {orders?.map((order, index) => {
             return (
-              <tr>
-                <td>{index + 1}</td>
-                <td>{order.table}</td>
-                <td>{order.waiter}</td>
-                {/* <td>{order.food}</td> */}
-                <td>{order.price}</td>
-                <td className={defineColor(order)}>{order.status}</td>
-                <td>
-                  <button className='see-btn'>See</button>
-                </td>
-              </tr>
+              <tbody key={order.id}>
+                <tr>
+                  <td>{index + 1}</td>
+                  <td>{order.table}</td>
+                  <td>{order.waiter}</td>
+                  {/* <td>{order.food}</td> */}
+                  <td>{order.price}</td>
+                  <td className={order.status === 'done' ? 'success' : null}>
+                    {order.status}
+                  </td>
+                  <td>
+                    <button
+                      className='see-btn'
+                      onClick={() => handleClick(order.id)}
+                    >
+                      See
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
             )
           })}
         </table>
       </div>
-      <div className='single-order'></div>
+      <div className='single-order'>
+        <Outlet />
+      </div>
     </Wrapper>
   )
 }
@@ -73,10 +67,13 @@ const Wrapper = styled.div`
   justify-items: center;
   margin-top: 2rem;
 
+  .all-orders {
+    text-align: center;
+  }
+
   table {
     /* width: 80%; */
     border-collapse: collapse;
-    text-align: center;
   }
 
   th,
@@ -102,10 +99,6 @@ const Wrapper = styled.div`
   .success {
     color: green;
     font-weight: 600;
-  }
-
-  .rejected {
-    color: red;
   }
 
   .see-btn {
