@@ -11,7 +11,7 @@
     "id": 2,
     "table": "m2",
     "waiter": "Adesanya",
-    "status": "fulfilled",
+    "status": "done",
     "price": 18,
     "food": "lahmacun"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "table": "m5",
     "waiter": "Samir",
-    "status": "fulfilled",
+    "status": "done",
     "price": 21,
     "food": "club sandwich"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "table": "m6",
     "waiter": "Usman",
-    "status": "fulfilled",
+    "status": "done",
     "price": 8.3,
     "food": "dolma"
   },
