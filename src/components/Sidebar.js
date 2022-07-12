@@ -1,23 +1,28 @@
 import styled from 'styled-components'
 import { MdDashboard, MdMenuBook } from 'react-icons/md'
 import { GoListOrdered } from 'react-icons/go'
+import { MdAddCircle } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
 function Sidebar(props) {
   return (
     <Wrapper>
       <div className='sidenav-items'>
-        <Link to='/' className='sidenav-item'>
-          <MdDashboard className='icon' />
-          <p>Dashboard</p>
+        <Link to='/neworder' className='sidenav-item'>
+          <MdAddCircle className='icon' style={{ color: 'green' }} />
+          <p>New order</p>
+        </Link>
+        <Link to='/orders' className='sidenav-item'>
+          <GoListOrdered className='icon' />
+          <p>Orders</p>
         </Link>
         <Link to='/' className='sidenav-item'>
           <MdMenuBook className='icon' />
           <p>Menu</p>
         </Link>
-        <Link to='/orders' className='sidenav-item'>
-          <GoListOrdered className='icon' />
-          <p>Orders</p>
+        <Link to='/' className='sidenav-item'>
+          <MdDashboard className='icon' />
+          <p>Dashboard</p>
         </Link>
       </div>
     </Wrapper>
@@ -51,6 +56,7 @@ const Wrapper = styled.div`
     grid-template-columns: 2rem 6rem;
     column-gap: 2rem;
     place-items: center;
+    text-decoration: none;
     cursor: pointer;
   }
 

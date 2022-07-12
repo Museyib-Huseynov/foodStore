@@ -1,0 +1,22 @@
+[
+  {
+    "name": "kebab",
+    "price": 5
+  },
+  {
+    "name": "lahmacun",
+    "price": 3
+  },
+  {
+    "name": "drinks",
+    "price": 1.5
+  },
+  {
+    "name": "cheesburger",
+    "price": 3.5
+  },
+  {
+    "name": "salad",
+    "price": 2
+  }
+]

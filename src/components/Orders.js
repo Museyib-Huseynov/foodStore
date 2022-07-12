@@ -22,7 +22,6 @@ function Orders() {
               <th></th>
               <th>Table</th>
               <th>Waiter</th>
-              {/* <th>Food</th> */}
               <th>Price</th>
               <th>Status</th>
               <th></th>
@@ -37,7 +36,10 @@ function Orders() {
                   <td>{order.waiter}</td>
                   {/* <td>{order.food}</td> */}
                   <td>{order.price}</td>
-                  <td className={order.status === 'done' ? 'success' : null}>
+                  <td
+                    style={{ width: '5rem', textAlign: 'center' }}
+                    className={order.status === 'done' ? 'success' : null}
+                  >
                     {order.status}
                   </td>
                   <td>

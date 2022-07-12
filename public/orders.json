@@ -5,7 +5,20 @@
     "waiter": "Usman",
     "status": "pending",
     "price": 12.5,
-    "food": "kebab"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "pending"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "pending"
+      }
+    ]
   },
   {
     "id": 2,
@@ -13,7 +26,20 @@
     "waiter": "Adesanya",
     "status": "done",
     "price": 18,
-    "food": "lahmacun"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "done"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "done"
+      }
+    ]
   },
   {
     "id": 3,
@@ -21,7 +47,20 @@
     "waiter": "Conor",
     "status": "done",
     "price": 11,
-    "food": "salad"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "done"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "done"
+      }
+    ]
   },
   {
     "id": 4,
@@ -29,7 +68,20 @@
     "waiter": "Samir",
     "status": "pending",
     "price": 5,
-    "food": "doner"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "pending"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "pending"
+      }
+    ]
   },
   {
     "id": 5,
@@ -37,7 +89,20 @@
     "waiter": "Samir",
     "status": "done",
     "price": 21,
-    "food": "club sandwich"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "done"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "done"
+      }
+    ]
   },
   {
     "id": 6,
@@ -45,7 +110,20 @@
     "waiter": "Usman",
     "status": "done",
     "price": 8.3,
-    "food": "dolma"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "done"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "done"
+      }
+    ]
   },
   {
     "id": 7,
@@ -53,7 +131,20 @@
     "waiter": "Conor",
     "status": "done",
     "price": 15,
-    "food": "Pizza Mexican"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "done"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "done"
+      }
+    ]
   },
   {
     "id": 8,
@@ -61,7 +152,20 @@
     "waiter": "Dembele",
     "status": "done",
     "price": 12.5,
-    "food": "Saurma"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "done"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "done"
+      }
+    ]
   },
   {
     "id": 9,
@@ -69,7 +173,20 @@
     "waiter": "Usman",
     "status": "done",
     "price": 9.6,
-    "food": "soup"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "done"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "done"
+      }
+    ]
   },
   {
     "id": 10,
@@ -77,6 +194,19 @@
     "waiter": "Dembele",
     "status": "done",
     "price": 12,
-    "food": "kebab"
+    "food": [
+      {
+        "name": "kebab",
+        "amount": 1,
+        "price": 5,
+        "status": "done"
+      },
+      {
+        "name": "drinks",
+        "amount": 1,
+        "price": 2,
+        "status": "done"
+      }
+    ]
   }
 ]
